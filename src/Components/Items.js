@@ -2,6 +2,8 @@ import { faCheckCircle, faChevronCircleLeft, faChevronCircleRight, faCircle, faT
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
+import '../styles/Item.css';
+
 function Items(props) {
     const { listItem,
             index,

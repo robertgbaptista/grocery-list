@@ -2,6 +2,8 @@ import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
+import '../styles/NewItem.css';
+
 function NewItem(props) {
     const [ item, setItem ] = useState('');
 
@@ -33,7 +35,7 @@ function NewItem(props) {
                 value={item}
                 onChange={handleTextChange}
             />
-            <FontAwesomeIcon icon={faPlusCircle} onClick={handleSubmit} />
+            <FontAwesomeIcon icon={faPlusCircle} className="add-icon" onClick={handleSubmit} />
         </div>
     )
 }
