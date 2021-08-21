@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/App.css';
-
-import List from "./List";
+import AddList from './AddList';
 
 class App extends React.Component {
 
@@ -9,10 +8,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="app-header">
-          <h1>Grocery List</h1>
+          <h1>Lists!</h1>
         </header>
   
-        <List />
+        <AddList />
   
       </div>
     );

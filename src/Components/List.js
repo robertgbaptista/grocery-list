@@ -4,7 +4,7 @@ import Items from './Items';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
-function List() {
+function List(props) {
     const [ list, setList ] = useState([
         { item: 'Milk', quantity: 1, isSelected: false },
         { item: 'Bread', quantity: 2, isSelected: false },
@@ -48,6 +48,11 @@ function List() {
 
     return (
         <div>
+            <h3>{props.listName}</h3>
+            <button onClick={() => props.removeList(props.listName)}>
+                Remove List
+            </button>
+
 
             <NewItem addItem={addItem} />
 
