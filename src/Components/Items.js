@@ -34,19 +34,19 @@ function Items(props) {
                 {listItem.isSelected ? 
                     <div>
                         <FontAwesomeIcon icon={faCheckCircle} />
-                        <span className="completed">{listItem.item}</span>
+                        <span className="completed pl-2">{listItem.item}</span>
                     </div>
                     :
                     <div>
                         <FontAwesomeIcon icon={faCircle} />
-                        <span>{listItem.item}</span>
+                        <span className="pl-2">{listItem.item}</span>
                     </div>
                 }
             </div>
 
-            <div className="quantity">
+            <div className="quantity ml-auto">
                 { listItem.quantity === 1 ?
-                    <button>
+                    <button >
                         <FontAwesomeIcon icon={faTimesCircle} onClick={handleRemoveClick} />
                     </button>
                     :

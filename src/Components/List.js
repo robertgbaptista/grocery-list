@@ -47,33 +47,36 @@ function List(props) {
     }
 
     return (
-        <div>
-            <h3>{props.listName}</h3>
-            <button onClick={() => props.removeList(props.listName)}>
-                Remove List
-            </button>
+        <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+            <div className="flex-shrink-0">
+                <h3 className="text-xl font-medium text-black">{props.listName}</h3>
 
+                <button onClick={() => props.removeList(props.listName)} className="m-2 px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                    Remove List
+                </button>
 
-            <NewItem addItem={addItem} />
+                <NewItem addItem={addItem} />
 
-            <div className="list"> 
-                <ul>
-                    {
-                        list.map((listItem, index) => {
-                            return <Items listItem={listItem} index={index}
-                            removeItem={removeItem}
-                            toggleComplete={toggleComplete}
-                            increaseQuantity={increaseQuantity}
-                            decreaseQuantity={decreaseQuantity} />
-                        })
-                    }
-                </ul>
+                <div className="list"> 
+                    <ul>
+                        {
+                            list.map((listItem, index) => {
+                                return <Items listItem={listItem} index={index}
+                                removeItem={removeItem}
+                                toggleComplete={toggleComplete}
+                                increaseQuantity={increaseQuantity}
+                                decreaseQuantity={decreaseQuantity} />
+                            })
+                        }
+                        <button className="clear-list mt-2" onClick={clearList}>
+                            <FontAwesomeIcon icon={faTrashAlt} /> remove all items
+                        </button>
+                    </ul>
+                    
+                </div>
+
+                
             </div>
-
-            <button className="clear-list">
-                <FontAwesomeIcon icon={faTrashAlt} onClick={clearList} />
-            </button>
-
         </div>
     )
 } 
