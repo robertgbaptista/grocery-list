@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="app-header">
-          <h1>Lists!</h1>
+          <div className="text-4xl font-medium text-green-500">Grocery List Maker</div>
         </header>
   
         <AddList />

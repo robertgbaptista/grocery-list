@@ -36,7 +36,7 @@ function AddList() {
     return (
         <div>
             <form className="add-new-list" onSubmit={addNewList}>
-                <input
+                <input className="pl-2"
                     type="text"
                     name="item"
                     aria-label="Add new list"
@@ -44,16 +44,20 @@ function AddList() {
                     value={listName}
                     onChange={addListName}
                 />
-                <button type="submit">
+                <button type="submit" className="p-4">
                     Add New List
                 </button>
             </form>
 
             <div>
-                <div className="row">
-                    <h3>{listName}</h3>
+                {/* <div className="text-center">
+                    <h3 className="text-center">{listName}</h3>
+                </div> */}
+                
+                <div className="flex space-x-4 text-center">
+                    {listGroup}
                 </div>
-                {listGroup}
+                
             </div>
         </div>
     )

@@ -27,7 +27,7 @@ function NewItem(props) {
     }
 
     return (
-        <div className="add-item-box">
+        <div className="add-item-box mb-2">
             <input
                 type="text"
                 className="add-item"
