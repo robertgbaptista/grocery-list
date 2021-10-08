@@ -47,11 +47,12 @@ function List(props) {
     }
 
     return (
-        <div className="mt-6 w-5/6 p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+        <div className="mt-6 w-5/6 p-6 max-w-sm mx-auto bg-white opacity-90 rounded-xl">
             <div className="flex-shrink-0">
-                <h3 className="text-l font-medium text-black">{props.listName}</h3>
+                <h3 className="text-lg font-bold text-primary">{props.listName}</h3>
 
-                <button onClick={() => props.removeList(props.listName)} className="m-2 px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+                <button onClick={() => props.removeList(props.listName)} className="m-2 px-4 py-1 text-xs text-secondary rounded-full border border-secondary
+                 hover:text-white hover:bg-secondary hover:border-transparent">
                     Remove List
                 </button>
 
