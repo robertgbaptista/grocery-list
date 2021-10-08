@@ -35,17 +35,19 @@ function AddList() {
 
     return (
         <div>
-            <form className="add-new-list" onSubmit={addNewList}>
-                <input className="pl-2"
+            <form className="flex flex-row justify-center" onSubmit={addNewList}>
+                <input className="w-1/2 bg-transparent border-b border-accent text-white
+                focus:bg-transparent focus:outline-none"
                     type="text"
                     name="item"
                     aria-label="Add new list"
                     placeholder="Add new list"
                     value={listName}
                     onChange={addListName}
+                    autoComplete="off"
                 />
-                <button type="submit" className="p-4">
-                    Add New List
+                <button type="submit" className="w-1/3 p-2 bg-accent text-primary font-bold rounded-full">
+                    Add List
                 </button>
             </form>
 
