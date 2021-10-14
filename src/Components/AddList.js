@@ -36,7 +36,7 @@ function AddList() {
     return (
         <div>
             <form className="flex flex-row justify-center" onSubmit={addNewList}>
-                <input className="w-1/2 bg-transparent border-b border-accent text-white
+                <input className="w-1/2 md:w-5/12 max-w-md bg-transparent border-b border-accent text-white
                 focus:bg-transparent focus:outline-none"
                     type="text"
                     name="item"
@@ -46,17 +46,14 @@ function AddList() {
                     onChange={addListName}
                     autoComplete="off"
                 />
-                <button type="submit" className="w-1/3 p-2 bg-accent text-primary font-bold rounded-full">
+                <button type="submit" className="w-1/3 md:w-3/12 max-w-sm p-2 bg-accent text-primary font-bold rounded-full">
                     Add List
                 </button>
             </form>
 
             <div>
-                {/* <div className="text-center">
-                    <h3 className="text-center">{listName}</h3>
-                </div> */}
                 
-                <div className="flex space-x-4 text-center">
+                <div className="flex flex column flex-wrap space-x-4 text-center">
                     {listGroup}
                 </div>
                 

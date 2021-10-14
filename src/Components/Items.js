@@ -2,8 +2,6 @@ import { faCheckCircle, faChevronCircleLeft, faChevronCircleRight, faCircle, faT
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-import '../styles/Item.css';
-
 function Items(props) {
     const { listItem,
             index,
@@ -28,7 +26,7 @@ function Items(props) {
     }
 
     return (
-        <li className="item-container">
+        <li className="flex list-none my-1 text-secondary">
 
             <div className="item" onClick={handleToggleClick}>
                 {listItem.isSelected ? 
@@ -54,7 +52,7 @@ function Items(props) {
                         <FontAwesomeIcon icon={faChevronCircleLeft} onClick={handleDecreaseClick} />
                     </button>
                 }
-                <span>{listItem.quantity}</span>
+                <span className="mx-1">{listItem.quantity}</span>
                 <button>
                     <FontAwesomeIcon icon={faChevronCircleRight} onClick={handleIncreaseClick} />
                 </button>

@@ -2,8 +2,6 @@ import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
-import '../styles/NewItem.css';
-
 function NewItem(props) {
     const [ item, setItem ] = useState('');
 
@@ -27,15 +25,16 @@ function NewItem(props) {
     }
 
     return (
-        <div className="add-item-box mb-2">
+        <div className="flex justify-center my-1 mb-3 border rounded-full
+        border-accent">
             <input
                 type="text"
-                className="add-item"
+                className="w-5/6 mx-3 focus:outline-none"
                 placeholder="Add to list"
                 value={item}
                 onChange={handleTextChange}
             />
-            <FontAwesomeIcon icon={faPlusCircle} className="add-icon" onClick={handleSubmit} />
+            <FontAwesomeIcon icon={faPlusCircle} className="mx-2 my-1 text-xl text-accent" onClick={handleSubmit} />
         </div>
     )
 }

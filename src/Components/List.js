@@ -69,8 +69,8 @@ function List(props) {
                                 decreaseQuantity={decreaseQuantity} />
                             })
                         }
-                        <button className="clear-list mt-2" onClick={clearList}>
-                            <FontAwesomeIcon icon={faTrashAlt} /> remove all items
+                        <button className="clear-list mt-2 text-primary" onClick={clearList}>
+                            <FontAwesomeIcon icon={faTrashAlt} /> clear list
                         </button>
                     </ul>
                     
