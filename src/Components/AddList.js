@@ -46,14 +46,15 @@ function AddList() {
                     onChange={addListName}
                     autoComplete="off"
                 />
-                <button type="submit" className="w-1/3 md:w-3/12 max-w-sm p-2 bg-accent text-primary font-bold rounded-full">
+                <button type="submit" className="w-1/3 md:w-3/12 max-w-sm p-2 bg-accent text-primary font-bold rounded-full
+                hover:bg-white">
                     Add List
                 </button>
             </form>
 
             <div>
                 
-                <div className="flex flex column flex-wrap space-x-4 text-center">
+                <div className="bg-primary lg:flex lg:flex-row lg:flex-wrap">
                     {listGroup}
                 </div>
                 

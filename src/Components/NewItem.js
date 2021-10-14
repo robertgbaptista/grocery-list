@@ -29,7 +29,7 @@ function NewItem(props) {
         border-accent">
             <input
                 type="text"
-                className="w-5/6 mx-3 focus:outline-none"
+                className="w-5/6 mx-3 focus:outline-none text-secondary"
                 placeholder="Add to list"
                 value={item}
                 onChange={handleTextChange}

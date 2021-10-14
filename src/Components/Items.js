@@ -32,7 +32,7 @@ function Items(props) {
                 {listItem.isSelected ? 
                     <div>
                         <FontAwesomeIcon icon={faCheckCircle} />
-                        <span className="completed pl-2">{listItem.item}</span>
+                        <span className="completed pl-2 line-through">{listItem.item}</span>
                     </div>
                     :
                     <div>
@@ -52,7 +52,7 @@ function Items(props) {
                         <FontAwesomeIcon icon={faChevronCircleLeft} onClick={handleDecreaseClick} />
                     </button>
                 }
-                <span className="mx-1">{listItem.quantity}</span>
+                <span className="mx-2">{listItem.quantity}</span>
                 <button>
                     <FontAwesomeIcon icon={faChevronCircleRight} onClick={handleIncreaseClick} />
                 </button>
