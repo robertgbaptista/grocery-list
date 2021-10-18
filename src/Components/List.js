@@ -49,7 +49,7 @@ function List(props) {
     return (
         <div className="mt-6 w-5/6 p-6 max-w-sm mx-auto bg-white opacity-90 rounded-xl">
             <div className="flex-shrink-0 flex flex-col">
-                <h3 className="text-lg font-bold text-primary text-center">{props.listName}</h3>
+                <h3 className="text-xl font-bold text-primary text-center">{props.listName}</h3>
 
                 <button onClick={() => props.removeList(props.listName)} className="m-2 px-4 py-1 text-xs text-secondary rounded-full border border-secondary
                  hover:text-white hover:bg-secondary hover:border-transparent">
