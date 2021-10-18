@@ -3,6 +3,8 @@ Created a list maker from scratch using React.js and designed using Figma. The t
 
 <img width="964" alt="list-maker on different screens" src="https://github.com/contentmediaguy/grocery-list/blob/main/list-maker.png">
 
+➡ [Live site](https://contentmediaguy.github.io/grocery-list/)
+
 ### Built with
 - HTML
 - Tailwind CSS
