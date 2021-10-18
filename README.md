@@ -9,6 +9,10 @@ Created a list maker from scratch using React.js and designed using Figma. The t
 - JavaScript
 - React
 
+### Dependencies
+- Font Awesome
+- Craco
+
 ### Authors
 - Twitter [@robertgbaptista] (https://twitter.com/robertgbaptista)
 - GitHub [@tomgertin] (https://github.com/d3netxer)
